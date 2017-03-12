@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services/" xmlns:tns="http://services/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="geefAantalArbeidersPerStad" type="tns:geefAantalArbeidersPerStad"/>
+
+  <xs:element name="geefAantalArbeidersPerStadResponse" type="tns:geefAantalArbeidersPerStadResponse"/>
+
+  <xs:element name="geefAantalBewonersPerStad" type="tns:geefAantalBewonersPerStad"/>
+
+  <xs:element name="geefAantalBewonersPerStadResponse" type="tns:geefAantalBewonersPerStadResponse"/>
+
+  <xs:element name="geefAantalWerklozenPerStad" type="tns:geefAantalWerklozenPerStad"/>
+
+  <xs:element name="geefAantalWerklozenPerStadResponse" type="tns:geefAantalWerklozenPerStadResponse"/>
+
+  <xs:complexType name="geefAantalArbeidersPerStad">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geefAantalArbeidersPerStadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geefAantalBewonersPerStad">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geefAantalBewonersPerStadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geefAantalWerklozenPerStad">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geefAantalWerklozenPerStadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
